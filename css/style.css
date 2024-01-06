@@ -1,4 +1,18 @@
-/* Basic Style */
+/* #################################################################*/
+/*#region BASIC STYLE*/
+
+html {
+    box-sizing: border-box;	
+    scroll-behavior: smooth;
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -8,11 +22,22 @@ body {
 .section {
     width: 500px;
     margin: 0 auto;
-    display: block;
+}
+
+.wrapper {
+}
+
+.main__img {
+    width: 100%;
 }
 
 
+.block__row {
+    display: flex;
+}
 
+
+/*#endregion BASIC STYLE*/
 
 
 
@@ -32,7 +57,7 @@ body {
 .aaa img {
     width: 100%;
 }
-.aaa .more_inf {
+.aaa .link {
     font-family: fantasy, cursive;
 }
 
@@ -40,11 +65,11 @@ body {
 .aaa { text-align: center;
 }
 }
-.centered-main-page-element {
+/* .centered-main-page-element {
     display: block;
     width: 500px;
     margin: 0 auto 0;
-}
+} */
 .task {
     width: 56%;
     display: inline-block;
