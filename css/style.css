@@ -4,6 +4,25 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
+
+.section {
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .aaa {
     width: 500px;
     margin: 0 auto;
