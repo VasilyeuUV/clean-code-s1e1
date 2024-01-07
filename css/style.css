@@ -29,6 +29,10 @@ li {
     list-style: none;
 }
 
+.hidden {
+    display: none
+}
+
 .section {
     width: 500px;
     margin: 0 auto 18px;
@@ -290,9 +294,9 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+/* ul li input[type=text] {
     display: none;
-}
+} */
 
 ul li.editMode input[type=text] {
     display: inline-block;
