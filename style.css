@@ -156,7 +156,10 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+/* ul li input[type="text"] {
+  display: none;
+} */
+.hidden {
   display: none;
 }
 
