@@ -58,8 +58,6 @@ header {
 }
 
 input[type="text"] {
-  font-size: 18px;
-  line-height: 18px;
   height: 21px;
   padding: 0 9px;
   border: 1px solid #ddd;
@@ -87,7 +85,7 @@ li {
 
 .section {
   width: 500px;
-  margin: 0 auto 45px;
+  margin: 0 auto 46px;
 }
 
 
@@ -130,6 +128,7 @@ button {
   border: 0px;
   cursor: pointer;
   width: 60px;
+  font-size: 15px;
 }
 
 .btn__del-img {
@@ -165,7 +164,7 @@ button {
 
 .lst__item {
   padding: 0 10px 28px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 /*#endregion List*/
@@ -183,7 +182,7 @@ button {
 
 .details__img {
   width: 100%;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
 }
 
 .details__link {
@@ -196,9 +195,13 @@ button {
 
 /* #################################################################*/
 /*#region TODO*/
+.section__todo {
+  font-size: 18px;
+  line-height: 18px;
+}
 
 .block__todo {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 #new-task {
