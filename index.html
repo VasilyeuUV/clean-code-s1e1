@@ -16,57 +16,95 @@
   <main class="main">
 
     <section class="section">
-      <h1 class="main__title visually-hidden">THE EISENHOWER MATRIX</h1>
-      <div class="block__details">
-        <img src="./assets/img/eisenhower-matrix.jpg" alt="Eisenhower matrix picture">
-        <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
-          Want more details?
-        </a>
+      <!-- <div class="wrapper aaa"> -->
+      <div class="wrapper">
+        <h1 class="main__title visually-hidden">THE EISENHOWER MATRIX</h1>
+        <div class="block block__details">
+          <img class="details__img" 
+               src="./assets/img/eisenhower-matrix.jpg" 
+               alt="The Eisenhower matrix picture">
+          <a class="link details__link" 
+             href="https://goal-life.com/page/method/matrix-eisenhower">
+            Want more details?
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="centered-main-page-element">
-        <div id="topSectionForAddingElementToList">
-          <label for="new-task">Add Item</label>
-          <div class="task-row-wrapper">
-            <input id="new-task" class="task" type="text">
-            <button>Add</button>
+      <!-- <div class="wrapper centered-main-page-element"> -->
+      <div class="wrapper wrapper__todo">
+
+        <!-- <div id="topsectionforaddingelementtolst" class="block block__add-item"> -->
+        <div class="block block__add-item">
+          <h2 class="block__title">
+            <label class="add-item__lbl" for="new-task">Add Item</label>
+          </h2>
+          <!-- <div class="task-row-wrapper"> -->
+          <div class="block__row">
+            <!-- <input id="new-task" class="task" type="text"> -->
+            <input id="new-task" class="input__text" type="text">
+            <button class="btn__str">Add</button>
           </div>
         </div>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input class="task hidden" type="text">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./assets/icons/remove.svg" alt="Remove button image">
-            </button>
-          </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input class="task hidden" type="text" value="Go Shopping">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./assets/icons/remove.svg" alt="Remove button image">
-            </button>
-          </li>
-        </ul>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input class="task hidden" type="text">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./assets/icons/remove.svg" alt="Remove button image">
-            </button>
-          </li>
-        </ul>
+
+        <div class="block block__todo">
+          <h2 class="block__title">Todo</h2>
+          <!-- <ul id="incompletetasks"> -->
+          <ul class="lst">
+            <li class="lst__item">
+              <div class="block__row">
+                <input class="input__chk" type="checkbox">
+                <!-- <label class="task">Pay Bills</label> -->
+                <label class="lbl__chk">Pay Bills</label>
+                <!-- <input type="text" class="task"> -->
+                <input class="input__text hidden" type="text">
+                <button class="btn__str">Edit</button>
+                <button class="btn__del">
+                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                </button>
+              </div>
+            </li>
+            <!-- <li class="editmode"> -->
+            <li class="lst__item">
+              <div class="block__row">
+                <!-- <input type="checkbox"> -->
+                <input class="input__chk" type="checkbox">
+                <!-- <label class="task">Go Shopping</label> -->
+                <label class="lbl__chk">Go Shopping</label>
+                <!-- <input type="text" value="go shopping" class="task"> -->
+                <input class="input__text hidden" type="text" value="go shopping">
+                <button class="btn__str">Save</button>
+                <button class="btn__del">
+                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="block block__completed">
+          <h2 class="block__title">Completed</h2>
+          <!-- <ul id="completed-tasks"> -->
+          <ul id="completed-tasks" class="lst">
+            <!-- <li> -->
+            <li class="lst__item">
+              <div class="block__row">
+                <!-- <input type="checkbox" checked> -->
+                <input class="input__chk" type="checkbox" checked>
+                <!-- <label class="task">See the Doctor</label> -->
+                <label class="lbl__chk">See the Doctor</label>
+                <!-- <input type="text" class="task"> -->
+                <input class="input__text hidden" type="text">
+                <button class="btn__str">Edit</button>
+                <button class="btn__del">
+                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
