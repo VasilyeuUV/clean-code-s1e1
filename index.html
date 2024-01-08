@@ -41,13 +41,13 @@
           </h2>
           <div class="block__row">
             <input id="new-task" class="input__text" type="text">
-            <button class="btn__str">Add</button>
+            <button id="btn__new-task_add" class="btn__str">Add</button>
           </div>
         </div>
 
         <div class="block block__todo">
           <h2 class="block__title">Todo</h2>
-          <ul class="lst">
+          <ul class="lst lst__todo">
             <li class="lst__item">
               <div class="block__row">
                 <input class="input__chk" type="checkbox">
@@ -61,7 +61,7 @@
                 </button>
               </div>
             </li>
-            <li class="lst__item">
+            <li class="lst__item edit-mode">
               <div class="block__row">
                 <input class="input__chk" type="checkbox">
                 <label class="lbl__chk todo__text hidden">Go Shopping</label>
@@ -79,7 +79,7 @@
 
         <div class="block block__completed">
           <h2 class="block__title">Completed</h2>
-          <ul id="completed-tasks" class="lst">
+          <ul class="lst lst__completed">
             <li class="lst__item">
               <div class="block__row">
                 <input class="input__chk" type="checkbox" checked>
