@@ -21,8 +21,18 @@ body {
     font-family: Lato, sans-serif;
 }
 
-input {
-    outline: none;
+input[type="text"] {
+    /* outline: none; */
+    /* margin: 0; */
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
 }
 
 li {
@@ -42,6 +52,11 @@ li {
 
 }
 
+.wrapper__todo {
+    width: 80%;
+    margin: auto;
+}
+
 
 
 
@@ -49,6 +64,9 @@ li {
 
 /*--------------------------------------------------------------*/
 /*#region Blocks*/
+.block {
+    /* margin-bottom: 20px; */
+}
 
 .block__title {
     color: #333;
@@ -61,13 +79,15 @@ li {
 }
 
 .block__row {
-    width: 100%;
+    width: 95%;
+    margin: auto;
     display: flex;    
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     padding: 20px 0;
     /* border-bottom: 1px solid red;     */
+    vertical-align: middle;
 }
 
 /*#endregion Blocks*/
@@ -121,7 +141,7 @@ button {
 /* #################################################################*/
 /*#region DETAILS*/
 
-.details__block {
+.block__details {
     text-align: right;
 }
 
@@ -137,6 +157,24 @@ button {
 
 
 
+/* #################################################################*/
+/*#region TODO*/
+
+#new-task {
+    width: 318px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #dDd;
+    background: #FFF;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+/*#endregion TODO*/
 
 
 
@@ -222,7 +260,7 @@ label[for='new-task'] {
     text-transform: uppercase;
 } */
 
-input[type="text"] {
+/* input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -233,7 +271,7 @@ input[type="text"] {
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
-}
+} */
 
 input[type="text"]:focus {
     color: #333;
@@ -245,9 +283,9 @@ input[type="text"]:focus {
     margin: 0 0 20px;
 } */
 
-input#new-task {
+/* input#new-task {
     width: 318px;
-}
+} */
 
 /* Task list */
 /* .lst__item {
