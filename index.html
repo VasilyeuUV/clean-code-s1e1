@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lato:300,400,700"> -->
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,8 +15,8 @@
 
   <main class="main">
 
+    <!-- MATRIX PICTURE -->
     <section class="section">
-      <!-- <div class="wrapper aaa"> -->
       <div class="wrapper">
         <h1 class="main__title visually-hidden">THE EISENHOWER MATRIX</h1>
         <div class="block block__details">
@@ -32,18 +31,15 @@
       </div>
     </section>
 
+    <!-- SECTION TODO -->
     <section class="section section__todo">
-      <!-- <div class="wrapper centered-main-page-element"> -->
       <div class="wrapper wrapper__todo">
 
-        <!-- <div id="topsectionforaddingelementtolst" class="block block__add-item"> -->
         <div class="block block__add-item">
           <h2 class="block__title">
             <label class="add-item__lbl" for="new-task">Add Item</label>
           </h2>
-          <!-- <div class="task-row-wrapper"> -->
           <div class="block__row">
-            <!-- <input id="new-task" class="task" type="text"> -->
             <input id="new-task" class="input__text" type="text">
             <button class="btn__str">Add</button>
           </div>
@@ -51,14 +47,11 @@
 
         <div class="block block__todo">
           <h2 class="block__title">Todo</h2>
-          <!-- <ul id="incompletetasks"> -->
           <ul class="lst">
             <li class="lst__item">
               <div class="block__row">
                 <input class="input__chk" type="checkbox">
-                <!-- <label class="task">Pay Bills</label> -->
                 <label class="lbl__chk todo__text">Pay Bills</label>
-                <!-- <input type="text" class="task"> -->
                 <input class="input__text todo__text hidden" type="text">
                 <button class="btn__str">Edit</button>
                 <button class="btn__del">
@@ -68,14 +61,10 @@
                 </button>
               </div>
             </li>
-            <!-- <li class="editmode"> -->
             <li class="lst__item">
               <div class="block__row">
-                <!-- <input type="checkbox"> -->
                 <input class="input__chk" type="checkbox">
-                <!-- <label class="task">Go Shopping</label> -->
                 <label class="lbl__chk todo__text hidden">Go Shopping</label>
-                <!-- <input type="text" value="go shopping" class="task"> -->
                 <input class="input__text todo__text" type="text" value="Go Shopping">
                 <button class="btn__str">Save</button>
                 <button class="btn__del">
@@ -90,16 +79,11 @@
 
         <div class="block block__completed">
           <h2 class="block__title">Completed</h2>
-          <!-- <ul id="completed-tasks"> -->
           <ul id="completed-tasks" class="lst">
-            <!-- <li> -->
             <li class="lst__item">
               <div class="block__row">
-                <!-- <input type="checkbox" checked> -->
                 <input class="input__chk" type="checkbox" checked>
-                <!-- <label class="task">See the Doctor</label> -->
                 <label class="lbl__chk todo__text">See the Doctor</label>
-                <!-- <input type="text" class="task"> -->
                 <input class="input__text todo__text hidden" type="text">
                 <button class="btn__str">Edit</button>
                 <button class="btn__del">
