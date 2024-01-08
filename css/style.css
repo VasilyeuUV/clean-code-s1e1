@@ -1,0 +1,214 @@
+/*#################################################################*/
+/*#region FONTS*/
+
+/* lato-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../assets/fonts/lato-v24-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/lato-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/lato-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*#endregion FONTS*/
+
+/* #################################################################*/
+/*#region BASIC STYLE*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+header {
+  margin-bottom: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.section {
+  width: 500px;
+  margin: 0 auto 45px;
+}
+
+/*--------------------------------------------------------------*/
+/*#region Blocks*/
+
+.block__title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 0 0 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*#endregion Blocks*/
+
+/*--------------------------------------------------------------*/
+/*#region Buttons*/
+
+button {
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  width: 60px;
+  font-size: 15px;
+}
+
+.btn__del-img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.btn__del-img:hover {
+  transform: rotateZ(0);
+}
+
+.btn__str {
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #888;
+  margin-left: auto;
+}
+
+.btn__str:hover {
+  color: #3a3a3a;
+}
+
+/*#endregion Buttons*/
+
+/*#endregion BASIC STYLE*/
+
+/* #################################################################*/
+/*#region DETAILS*/
+
+.block__details {
+  text-align: right;
+}
+
+.details__img {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.details__link {
+  font-family: fantasy, cursive;
+}
+
+/*#endregion DETAILS*/
+
+/* #################################################################*/
+/*#region TODO*/
+
+#new-task {
+  width: 440px;
+}
+
+.section__todo {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.block__todo {
+  margin-bottom: 22px;
+}
+
+.block__add-item {
+  margin-bottom: 46px;
+
+  .block__row {
+    gap: 0;
+  }
+}
+
+.block__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.lst__item {
+  padding: 0 10px 28px;
+  margin-bottom: 12px;
+}
+
+.input__text {
+  height: 21px;
+  padding: 0 9px;
+  background: #fff;
+  border: 1px solid #ddd;
+  outline: 0;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+.input__text:focus {
+  color: #333;
+}
+
+.todo__text {
+  width: 453px;
+}
+
+.lbl__chk {
+  padding-left: 10px;
+}
+
+/*#endregion TODO*/
+
+@media (max-width: 768px) {
+  .block__details {
+    text-align: center;
+  }
+}
