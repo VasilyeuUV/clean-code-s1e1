@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lato:300,400,700">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -56,12 +57,14 @@
               <div class="block__row">
                 <input class="input__chk" type="checkbox">
                 <!-- <label class="task">Pay Bills</label> -->
-                <label class="lbl__chk">Pay Bills</label>
+                <label class="lbl__chk todo__text">Pay Bills</label>
                 <!-- <input type="text" class="task"> -->
-                <input class="input__text hidden" type="text">
+                <input class="input__text todo__text hidden" type="text">
                 <button class="btn__str">Edit</button>
                 <button class="btn__del">
-                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                  <img class="btn__del-img"
+                       src="./assets/icons/remove.svg"
+                       alt="Remove button image">
                 </button>
               </div>
             </li>
@@ -71,12 +74,14 @@
                 <!-- <input type="checkbox"> -->
                 <input class="input__chk" type="checkbox">
                 <!-- <label class="task">Go Shopping</label> -->
-                <label class="lbl__chk">Go Shopping</label>
+                <label class="lbl__chk todo__text hidden">Go Shopping</label>
                 <!-- <input type="text" value="go shopping" class="task"> -->
-                <input class="input__text hidden" type="text" value="go shopping">
+                <input class="input__text todo__text" type="text" value="Go Shopping">
                 <button class="btn__str">Save</button>
                 <button class="btn__del">
-                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                  <img class="btn__del-img"
+                       src="./assets/icons/remove.svg"
+                       alt="Remove button image">
                 </button>
               </div>
             </li>
@@ -93,12 +98,14 @@
                 <!-- <input type="checkbox" checked> -->
                 <input class="input__chk" type="checkbox" checked>
                 <!-- <label class="task">See the Doctor</label> -->
-                <label class="lbl__chk">See the Doctor</label>
+                <label class="lbl__chk todo__text">See the Doctor</label>
                 <!-- <input type="text" class="task"> -->
-                <input class="input__text hidden" type="text">
+                <input class="input__text todo__text hidden" type="text">
                 <button class="btn__str">Edit</button>
                 <button class="btn__del">
-                  <img src="./assets/icons/remove.svg" alt="Remove button image">
+                  <img class="btn__del-img"
+                       src="./assets/icons/remove.svg"
+                       alt="Remove button image">
                 </button>
               </div>
             </li>
